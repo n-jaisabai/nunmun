@@ -117,6 +117,8 @@
           >ถัดไป</button
         >
       </div>
+    {:catch error}
+      <p class="description m-4 text-xl md:text-3xl text-black text-center">{error.message}</p>
     {/await}
   </div>
 </main>

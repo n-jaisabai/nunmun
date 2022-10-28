@@ -5,7 +5,7 @@ import { render } from "@testing-library/svelte"
 import App from "./App.svelte"
 
 it("works", () => {
-  const { getByText } = render(App, {})
+  const { component } = render(App, {})
 
-  expect(getByText("Svelte")).toBeInTheDocument()
+  expect(component).toBeDefined()
 })
